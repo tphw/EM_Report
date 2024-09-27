@@ -7,10 +7,13 @@
 ## **Description:** 
   The sweep() function of the vulnerable contract is complex and it has various steps. Therefore, for ease of understanding, I won't explain each function steps, but rather give you a general idea of ​​how it works: 
 
-  - Get Trunk balance of "Vulnerable contract". _deposit is the Trunk token >>>0xdd325C38b12903B727D16961e61333f4871A70E0::balanceOf(0x6839e295a8f13864A2830fA0dCC0F52e71a82DbF) [staticcall]
+  - Get Trunk balance of "Vulnerable contract". _deposit is the Trunk token.
+  - >>>0xdd325C38b12903B727D16961e61333f4871A70E0::balanceOf(0x6839e295a8f13864A2830fA0dCC0F52e71a82DbF) [staticcall]
   ![Alt text](images/image1.png)
 
-  - Get amount out of Busd if we sell the balance of "Vulnerable contract" in the Trunk/Busd pair. >>> 0x10ED43C718714eb63d5aA57B78B54704E256024E::getAmountsOut(1393630002182025473519986 [1.393e24], [0xdd325C38b12903B727D16961e61333f4871A70E0, 0xe9e7CEA3DedcA5984780Bafc599bD69ADd087D56]) [staticcall]
+  - Get amount out of Busd if we sell the balance of "Vulnerable contract" in the Trunk/Busd pair.
+  - >>> 0x10ED43C718714eb63d5aA57B78B54704E256024E::getAmountsOut(1393630002182025473519986 [1.393e24], [0xdd325C38b12903B727D16961e61333f4871A70E0, 0xe9e7CEA3DedcA5984780Bafc599bD69ADd087D56]) [staticcall]
   ![Alt text](images/image2.png)
   
-  -If boolean variable stor_6_20_20 is true (this variable at the moment is set to True), the output of getAmountsOut() if we sell the Trunk balance of the vulnerable contract in the Trunk/Busd pool is compared with the balance of the Trunk balance of the vulnerable contract multiply by 99/100 , because variable _slippageRate is set to 1. MEM[64 + MEM[64]] memory position is the output of getAmountsOut().
+  - If boolean variable stor_6_20_20 is true (this variable at the moment is set to True), the output of getAmountsOut() if we sell the Trunk balance of the vulnerable contract in the Trunk/Busd pool is compared with the balance of the Trunk balance of the vulnerable contract multiply by 99/100 , because variable _slippageRate is set to 1. MEM[64 + MEM[64]] memory position is the output of getAmountsOut().
+  ![Alt text](images/image3.png)
