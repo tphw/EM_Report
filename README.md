@@ -8,7 +8,7 @@
   The sweep() function of the vulnerable contract is complex and it has various steps. Therefore, for ease of understanding, I won't explain each function steps, but rather give you a general idea of ​​how it works: 
 
   -Get Trunk balance of "Vulnerable contract".
-  ![Alt text](images/sweep_function.png)
+  ![Alt text](images/image1.png)
   -Get amount out of Busd if we sell the balance of "Vulnerable contract" in the Trunk/Busd pair.
   -Check if variable storaged in stor_6_20_20 is true.
   -If variable stor_6_20_20 is true
