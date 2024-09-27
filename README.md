@@ -38,7 +38,7 @@
 
   ![Alt text](images/image8.png)
 
-  - Add liquidity to ELPHANT MONOEY/BUSD pool.
+  - Add liquidity to ELPHANT MONEY/BUSD pool.
 
   ![Alt text](images/image9.png)
      
