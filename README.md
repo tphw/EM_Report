@@ -9,38 +9,38 @@
 
   - Get Trunk balance of "Vulnerable contract". _deposit is the Trunk token.
     
-  ![Alt text](images/image1.png)
+    ![Alt text](images/image1.png)
 
   - Get amount out of Busd if we sell the balance of "Vulnerable contract" in the Trunk/Busd pair.
   
-  ![Alt text](images/image2.png)
+    ![Alt text](images/image2.png)
 
   - If boolean variable stor_6_20_20 is true (this variable at the moment is set to True), the output of getAmountsOut() if we sell the Trunk balance of the vulnerable contract in the TRUNK/BUSD pool is compared with the balance of the Trunk balance   of the vulnerable contract multiply by 99/100 , because variable _slippageRate is set to 1. MEM[64 + MEM[64]] memory position is the output of getAmountsOut().
 
-  ![Alt text](images/image3.png)
+    ![Alt text](images/image3.png)
 
   - If v15 is false, the sweep() function will revert because to call redeem() in _reserve contract(0xA70A8dc7BDf000c8f9374C5B4A542B3656EBad79) the msg.sender needs to be whitelisted, so we are safe if v15 is false, so , as long as the       
   getAmountsOut() returns a value less than the balance of Trunk of the "vulnerable contract" we are ok. (remember this because it's important).
 
   - If v15 is true, Trunk balance of the vulnerable contract will be swapped for BUSD.
   
-  ![Alt text](images/image4.png)
+    ![Alt text](images/image4.png)
 
-  ![Alt text](images/image5.png)
+    ![Alt text](images/image5.png)
 
   - Swap the obtained BUSDs for WBNB. Here is where a bad actor can use flash loans to manipulate the price of WBNB in the pool WBNB/BUSD, because the swap function doesn't have slippage protection. 
 
-  ![Alt text](images/image7.png)
+    ![Alt text](images/image7.png)
 
-  ![Alt text](images/image6.png)
+    ![Alt text](images/image6.png)
 
   - Swap the obtained WBNB for ELEPHANT MONEY token (0xE283D0e3B8c102BAdF5E8166B73E02D96d92F688).
 
-  ![Alt text](images/image8.png)
+    ![Alt text](images/image8.png)
 
   - Add liquidity to ELPHANT MONEY/BUSD pool.
 
-  ![Alt text](images/image9.png)
+    ![Alt text](images/image9.png)
      
 
 
