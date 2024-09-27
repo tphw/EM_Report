@@ -33,6 +33,14 @@
   ![Alt text](images/image7.png)
 
   ![Alt text](images/image6.png)
+
+  - Swap the obtained WBNB for ELEPHANT MONEY token (0xE283D0e3B8c102BAdF5E8166B73E02D96d92F688).
+
+  ![Alt text](images/image8.png)
+
+  - Add liquidity to ELPHANT MONOEY/BUSD pool.
+
+  ![Alt text](images/image9.png)
      
 
 
