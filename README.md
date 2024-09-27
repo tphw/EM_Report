@@ -28,7 +28,9 @@
 
   ![Alt text](images/image5.png)
 
-  - Swap the obtained BUSDs for WBNB. Here is where a bad actor can use flash loans to manipulate the price of WBNB in the pool WBNB/BUSD.
+  - Swap the obtained BUSDs for WBNB. Here is where a bad actor can use flash loans to manipulate the price of WBNB in the pool WBNB/BUSD, because the swap function doesn't have slippage protection. 
+
+  ![Alt text](images/image7.png)
 
   ![Alt text](images/image6.png)
      
