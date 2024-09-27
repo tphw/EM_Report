@@ -24,8 +24,10 @@
   getAmountsOut() returns a value less than the balance of Trunk of the "vulnerable contract" we are ok. (remember this because it's important).
 
   - If v15 is true, Trunk balance of the vulnerable contract will be swapped for BUSD.
-  </p>
+  
   ![Alt text](images/image4.png)
+
+  </p>
 
 
 
