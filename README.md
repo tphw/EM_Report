@@ -9,7 +9,7 @@
     
     ![Alt text](images/image1.png)
 
-  - Get amount out of Busd if we sell the balance of "Vulnerable contract" in the TRUNK/BUSD pair.
+  - Get amount out of BUSD if we sell the balance of "Vulnerable contract" in the TRUNK/BUSD pair.
   
     ![Alt text](images/image2.png)
 
