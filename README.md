@@ -13,7 +13,7 @@
   
     ![Alt text](images/image2.png)
 
-  - If boolean variable stor_6_20_20 is true (this variable at the moment is set to True), the output of getAmountsOut() if we sell the Trunk balance of the vulnerable contract in the TRUNK/BUSD pool is compared with the balance of the Trunk balance   of the vulnerable contract multiply by 99/100 , because variable _slippageRate is set to 1. MEM[64 + MEM[64]] memory position is the output of getAmountsOut().
+  - If boolean variable stor_6_20_20 is true (this variable at the moment is set to True), the output of getAmountsOut( "Trunk balance of vulnerable contract", [TRUNK/BUSD] ) , which represents if we sell the Trunk balance of the vulnerable contract in the TRUNK/BUSD pool, is compared with the balance of the Trunk balance of the vulnerable contract multiply by 99/100 , because variable _slippageRate is set to 1. MEM[64 + MEM[64]] memory position is the output of getAmountsOut().
 
     ![Alt text](images/image3.png)
 
