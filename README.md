@@ -51,6 +51,8 @@
 ## **MITIGATION** 
   As I said , not everything are bad news, if you have read this report this far, you don't want to miss the best part :). If you pay attention , we saw that sweep(), the vulnerable function, will revert if v15 is false, well , at the moment v15 is initialized as True (stor_6_20_20), but fortunately there is a function ( 0x671cc612(bool varg0) ) that can change this value to False, this function has access control and can only be called by the owner of the contract, in this case, the ownership has not been renounced and the owner is the Elephant Money deployer (0x16E76819aC1f0dfBECc48dFE93B198830e0C85EB), BINGO !!!. 
 
+  ![Alt text](images/image10.png)
+  
 
 
 
