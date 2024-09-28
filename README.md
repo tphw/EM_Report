@@ -17,7 +17,7 @@
 
     ![Alt text](images/image3.png)
 
-  - If v15 is false, the sweep() function will revert because to call redeem() in _reserve contract(0xA70A8dc7BDf000c8f9374C5B4A542B3656EBad79) the msg.sender needs to be whitelisted, so we are safe if v15 is false, so , as long as the       
+  - If v15 is false, the sweep() function will revert because to call redeem() in _reserve contract([0xA70A8dc7BDf000c8f9374C5B4A542B3656EBad79](https://bscscan.com/address/0xa70a8dc7bdf000c8f9374c5b4a542b3656ebad79)) the msg.sender needs to be whitelisted, so we are safe if v15 is false, so , as long as the       
   getAmountsOut( "Trunk balance of vulnerable contract", [TRUNK/BUSD] ) returns a value less than the balance of Trunk of the "vulnerable contract" we are ok. (remember this because it's important).
 
   - If v15 is true, Trunk balance of the vulnerable contract will be swapped for BUSD.
