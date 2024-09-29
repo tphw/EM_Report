@@ -11,8 +11,9 @@ Elephant Money
 
 #### DIRECT LOSSES 
 
-July, more than 1 million dollars 
-August, approximately 300 K dollars
+-July, more than 1 million dollars 
+
+-August, approximately 300 K dollars
 
 
 ## **SUMMARY**
