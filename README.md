@@ -9,7 +9,7 @@ Elephant Money
 
 ([0x6839e295a8f13864A2830fA0dCC0F52e71a82DbF](https://bscscan.com/address/0x6839e295a8f13864a2830fa0dcc0f52e71a82dbf)) 
 
-#### DIRECT LOSSES 
+#### FUNDS AT RISK 
 
 -July, more than 1 million dollars 
 
