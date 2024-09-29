@@ -11,9 +11,9 @@ Elephant Money
 
 #### FUNDS AT RISK 
 
--2024-July, more than 1 million dollars 
+- 2024-July, more than 1 million dollars 
 
--2024-August, approximately 300 K dollars
+- 2024-August, approximately 300 K dollars
 
 
 ## **SUMMARY**
