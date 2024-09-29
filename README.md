@@ -45,6 +45,12 @@ This is a report about a vulnerability discovered in a unverified contract ([0x6
 ## **EXPLOIT POCS** 
   I've created two POCs to demonstrate the exploit. [The first POC](POCs/poc.em.block.40673000.sol) is the case when Trunk's price is above 1.20 dollars , 1.59 to be precise , with more than 1 million direct losses, on July 21 , block number 40673000. [The second POC](POCs/poc.em.block.41464000.sol) is the case when Trunk's price is below 1.20 dollars, 0.88 cents, with approximately 300 K direct losses, on August 18, block number 41464000. 
 
+### To run the POCs:
+1- Install and create a Foundry project.
+2- Copy POCs files in the test folder. 
+3- Run the POCs with the Binance Smart Chain RPC URL. 
+
+
 ## **MITIGATION** 
   Like I said, it's not all bad news, if you have read this report this far, you don't want to miss the best part :). If you pay attention , we saw that sweep(), the vulnerable function, will revert if v15 is false, well , at the moment v15 is initialized as True (stor_6_20_20), but fortunately there is a function ( 0x671cc612(bool varg0) ) that can change this value to False, this function has access control and can only be called by the owner of the contract, in this case, the ownership has not been renounced and the owner is the Elephant Money deployer ([0x16E76819aC1f0dfBECc48dFE93B198830e0C85EB](https://bscscan.com/address/0x16e76819ac1f0dfbecc48dfe93b198830e0c85eb)), BINGO !!! Finally, I created a [last POC](POCs/poc.em.last.poc.sol) where I set the stor_6_20_20 to False, proving that I can stop the bad guys!!!
 
