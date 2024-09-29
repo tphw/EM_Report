@@ -31,7 +31,7 @@ This is a report about a vulnerability discovered in a unverified contract ([0x6
 
     ![Alt text](images/image6.png)
 
-  - Swap the obtained WBNB for ELEPHANT MONEY token ([0xE283D0e3B8c102BAdF5E8166B73E02D96d92F688])(https://bscscan.com/address/0xE283D0e3B8c102BAdF5E8166B73E02D96d92F688).
+  - Swap the obtained WBNB for ELEPHANT MONEY token ([0xE283D0e3B8c102BAdF5E8166B73E02D96d92F688](https://bscscan.com/address/0xE283D0e3B8c102BAdF5E8166B73E02D96d92F688)).
 
     ![Alt text](images/image8.png)
 
