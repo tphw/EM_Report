@@ -47,7 +47,9 @@ This is a report about a vulnerability discovered in a unverified contract ([0x6
 
 ### To run the POCs:
 1- Install and create a Foundry project.
-2- Copy POCs files in the test folder. 
+
+2- Copy POCs files in the test folder.
+
 3- Run the POCs with the Binance Smart Chain RPC URL. 
 
 
