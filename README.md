@@ -11,9 +11,9 @@ Elephant Money
 
 #### FUNDS AT RISK 
 
--July, more than 1 million dollars 
+-2024-July, more than 1 million dollars 
 
--August, approximately 300 K dollars
+-2024-August, approximately 300 K dollars
 
 
 ## **SUMMARY**
@@ -60,7 +60,7 @@ This is  a vulnerability discovered in a unverified contract ([0x6839e295a8f1386
   I created a fuzzing code snippet to find out what is the critical price where the exploit can be possible. As I said before sweep() function will revert when v15 is false , and this will happen when the output of getAmountsOut( "Trunk balance of vulnerable contract", [TRUNK/BUSD] ) is bigger than "Trunk balance of vulnerable contract". The exploit will be possible when the price of TRUNK is above $1.20. I've to point out that the price of Trunk doesn't have to be strictly above 1.20, since even if it is less than 1.20, the attacker can manipulate the price of Trunk ,then proceed with the exploit as I have explained above. The minimum price of Trunk where the exploit is possible is 0.60 cents. 
 
 ## **EXPLOIT POCS** 
-  I've created two POCs to demonstrate the exploit. [The first POC](POCs/poc.em.block.40673000.sol) is the case when Trunk's price is above 1.20 dollars , 1.59 to be precise , with more than 1 million direct losses, on July 21 , block number 40673000. [The second POC](POCs/poc.em.block.41464000.sol) is the case when Trunk's price is below 1.20 dollars, 0.88 cents, with approximately 300 K direct losses, on August 18, block number 41464000. 
+  I've created two POCs to demonstrate the exploit. [The first POC](POCs/poc.em.block.40673000.sol) is the case when Trunk's price is above 1.20 dollars , 1.59 to be precise , with more than 1 million direct losses, on 2024-July-21, block number 40673000. [The second POC](POCs/poc.em.block.41464000.sol) is the case when Trunk's price is below 1.20 dollars, 0.88 cents, with approximately 300 K direct losses, on 2024-August-18, block number 41464000. 
 
 ### To run the POCs:
 1- Install and create a Foundry project.
