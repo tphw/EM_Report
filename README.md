@@ -3,7 +3,7 @@
 ## **DETAILS**
 #### PROTOCOL 
 
-ELEPHANT MONEY 
+Elephant Money 
 
 #### VULNERABLE CONTRACT
 
