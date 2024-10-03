@@ -11,9 +11,9 @@ Elephant Money
 
 #### FUNDS AT RISK 
 
-- 2024-July, approximately 1 million dollars 
+- July-2024, approximately 1 million dollars 
 
-- 2024-August, approximately 300 K dollars
+- August-2024, approximately 300 K dollars
 
 - **In the future losses may exceed 1 million dollars because the damage will increase as the price of the TRUNK increases**
 
